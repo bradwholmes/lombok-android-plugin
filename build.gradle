@@ -1,0 +1,26 @@
+buildscript {
+  repositories { }
+
+  dependencies { }
+}
+
+apply plugin: 'groovy'
+
+group = 'ch.inkspot'
+version = '0.0.1-SNAPSHOT'
+
+sourceCompatibility = JavaVersion.VERSION_1_6
+targetCompatibility = JavaVersion.VERSION_1_6
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile gradleApi()
+  compile localGroovy()
+
+  compile 'com.neenbedankt.gradle.plugins:android-apt:1.4'
+  compile 'com.android.tools.build:gradle:1.0.0'
+  compile 'org.projectlombok:lombok:1.14.8'
+}
